@@ -1,0 +1,213 @@
+@media (max-width: 880px) {
+    html {
+        font-size: 14px;
+    }
+    //header
+    header {
+        // navigation
+        nav {
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            ul {
+                width: 500px;
+                height: 95vh;
+                background-color: $blue-color;
+                position: absolute;
+                top: 83px;
+                left: -510px;
+                align-content: center;
+                li {
+                    text-align: center;
+                    width: 100%;
+                    a {
+                        color: white;
+                        display: block;
+                        margin-top: 1%;
+                        &::after {
+                            content: '';
+                            height: 0px;
+                            width: 0px;
+                            background-color: white;
+                            position: absolute;
+                            left: 0px;
+                            bottom: 0px;
+                            transform: translate(214px);
+                        }
+                        &:hover::after {
+                            height: 2px;
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+            .remove-nav {
+                left: -500;
+            }
+            .active {
+                left: 0px;
+            }
+            .hamburger {
+                display: block;
+            }
+            .line-1 {
+                top: 9px;
+            }
+            .line-2 {
+                top: 21px;
+            }
+            .line-3 {
+                top: 33px;
+            }
+            .no-line {
+                display: none;
+            }
+            .rotate-line-2 {
+                transform: rotate(55deg);
+            }
+            .rotate-line-3 {
+                top: 20px;
+                transform: rotate( 123deg);
+            }
+        }
+    }
+    // about section
+    .about {
+        .about-text {
+            width: 95%;
+            margin: 0 auto;
+            .heading {
+                &:after {
+                    left: 159px;
+                }
+            }
+        }
+        .about-image {
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+    // services
+    .services {
+        .services-image {
+            .service-image-box {
+                width: 85%;
+                margin: 24px auto;
+            }
+        }
+    }
+    // our trainers
+    .trainers {
+        .trainer-box {
+            width: 85%;
+            margin: 20px auto;
+        }
+    }
+    // gallery starts here
+    .gallery {
+        .heading {
+            &::after {
+                left: 43%;
+                top: 60px;
+            }
+        }
+        .gallery-img {
+            width: 85%;
+            margin: 20px auto;
+        }
+    }
+    // contact
+    .contact {
+        .heading {
+            text-align: center;
+            &::after {
+                left: 63%;
+            }
+        }
+        form {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .map {
+            width: 95%;
+            margin: 0px auto;
+            iframe {
+                position: unset;
+            }
+        }
+    }
+    .footer-parent {
+        .footer {
+            .footer-box {
+                width: 46%;
+                margin: 0 auto;
+                button {
+                    width: 100%;
+                }
+            }
+            .news {
+                width: 95%;
+                margin: 20px auto;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    header {
+        nav {
+            ul {
+                width: 250px;
+                left: -250px;
+                li {
+                    text-align: center;
+                    width: 100%;
+                    a {
+                        &::after {
+                            transform: translate(89px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:550px) {
+    //banner slider
+    .banner-slider {
+        width: 100%;
+        position: relative;
+        .banner-text {
+            left: 0%;
+            h3 {
+                font-size: 2rem;
+            }
+            h1 {
+                font-size: 4.8rem;
+                line-height: 64px;
+            }
+        }
+    }
+    // contact
+    .contact {
+        .heading {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    .footer-parent {
+        text-align: center;
+        .footer {
+            .footer-box {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .news {
+                width: 70%;
+                margin: 20px auto;
+            }
+        }
+    }
+}
